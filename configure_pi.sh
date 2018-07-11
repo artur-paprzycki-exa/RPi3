@@ -32,7 +32,7 @@ $ActionResumeRetryCount -1        # infinite retries if host is down
 # RsyslogGnuTLS
 $DefaultNetstreamDriverCAFile /etc/rsyslog.d/keys/ca.d/digicert_geotrust_cas.crt
 
-template(name="SumoFormat" type="string" string="<%pri%>%protocol-version% %timestamp:::date-rfc3339% %HOSTNAME% %app-name% %procid% %msgid% [Lenif6ptnFeZXJceZa1zDZeIT1T+XsQXnTF+u3cFu5DClYdBoki3AJaSYywQQVD2@41123] %msg%\n
+template(name="SumoFormat" type="string" string="<%pri%>%protocol-version% %timestamp:::date-rfc3339% %HOSTNAME% %app-name% %procid% %msgid% [PLACE_SUMOLOGIC_COLLECTOR_TOKEN_HERE] %msg%\n
 ")
 
 if $syslogtag == 'wifi_audit.sh:' then {
