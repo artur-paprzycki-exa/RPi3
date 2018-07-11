@@ -7,5 +7,5 @@ It also configures rsyslog to send result to Sumologic cloud syslog collector ov
 Each detected SSID and acompanying info is send as separate message in syslog format. 
 To configure pi as rough wifi network detection drone download cofigure_pi script 
 to /home/pi folder and run with command 'sudo bash /home/pi/configure_pi.sh'
-Note: Configure_pi script has hardcoded sumologic syslog collector token, 
-pleas amend line #35 with your own token. Token is stored between [] square brackets.
+Note: Configure_pi script requires sumologic syslog collector token, 
+please amend line #35 with your own token. Token is stored between [] square brackets.
